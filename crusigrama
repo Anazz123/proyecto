@@ -1,0 +1,68 @@
+
+Option Explicit
+Dim res1 As Integer
+Dim res2 As Integer
+Dim res3 As Integer
+Dim res4 As Integer
+Dim res5 As Integer
+Dim Resultado As Integer
+
+Private Sub Command1_Click(Index As Integer)
+End
+
+End Sub
+
+Private Sub Command2_Click()
+Call contenido
+Resultado = res1 + res2 + res3 + res4 + res5
+Label7.Caption = Resultado
+End Sub
+
+Private Sub Form_Load()
+Label7.Caption = 0
+
+End Sub
+
+
+
+Public Sub contenido()
+If Text1.Text = "O" And Text2.Text = "S" And Text3.Text = "O" Then
+res1 = 2
+ElseIf Text1.Text = "o" And Text2.Text = "s" And Text3.Text = "o" Then
+res1 = 2
+Else
+res1 = 0
+End If
+
+If Text13.Text = "E" And Text8.Text = "L" And Text14.Text = "E" And Text15.Text = "F" And Text16.Text = "A" And Text17.Text = "N" And Text18.Text = "T" And Text19.Text = "E" Then
+res2 = 2
+ElseIf Text13.Text = "e" And Text8.Text = "l" And Text14.Text = "e" And Text15.Text = "f" And Text16.Text = "a" And Text18.Text = "n" And Text18.Text = "t" And Text19.Text = "e" Then
+res2 = 2
+Else
+res2 = 0
+End If
+
+If Text11.Text = "L" And Text10.Text = "E" And Text13.Text = "O" And Text24.Text = "N" Then
+res3 = 2
+ElseIf Text11.Text = "l" And Text10.Text = "e" And Text12.Text = "o" And Text24.Text = "n" Then
+res3 = 2
+Else
+res3 = 0
+End If
+
+If Text2.Text = "S" And Text4.Text = "E" And Text5.Text = "R" And Text6.Text = "P" And Text7.Text = "I" And Text8.Text = "E" And Text9.Text = "N" And Text10.Text = "T" And Text25.Text = "E" Then
+res4 = 2
+ElseIf Text2.Text = "s" And Text4.Text = "e" And Text5.Text = "r" And Text6.Text = "p" And Text7.Text = "i" And Text8.Text = "e" And Text9.Text = "n" And Text10.Text = "t" And Text25.Text = "e" Then
+res4 = 2
+Else
+res4 = 0
+End If
+
+If Text20.Text = "Z" And Text18.Text = "E" And Text21.Text = "B" And Text22.Text = "R" And Text23.Text = "A" Then
+res5 = 2
+ElseIf Text20.Text = "z" And Text18.Text = "e" And Text21.Text = "b" And Text22.Text = "r" And Text23.Text = "a" Then
+res5 = 2
+Else
+res5 = 0
+End If
+End Sub
